@@ -1,0 +1,28 @@
+# Unity Generated #
+Temp/
+Library/
+ProjectSettings/ProjectSettings.asset
+
+# Backups #
+*.bak
+*.unitybackup
+
+# \builds\ #
+build/
+Build/
+BUILD/
+
+# Special files #
+Icon?
+*.mdb
+
+# Directories #
+.obj/
+*.svd
+.DS_Store
+/.vs/HamsterVsDinosaurs/v17
+
+# Folder #
+Logs/
+FileContentIndex/
+obj/Debug
