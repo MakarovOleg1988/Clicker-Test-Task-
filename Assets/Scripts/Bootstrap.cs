@@ -9,11 +9,11 @@ namespace ClickerTestTask
 
         public int _levelValue = 1;
 
-        public bool _gravitySlowDownIsActive = false;
+        public bool _powerupX2Ticket = false;
 
         public TextMeshProUGUI _ticketValueText;
 
-        public GameObject _gravitySlowDownIcon;
+        public GameObject _powerupX2TicketIcon;
 
         public static Bootstrap Instance { get; set; }
 

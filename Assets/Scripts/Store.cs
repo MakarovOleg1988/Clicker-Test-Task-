@@ -41,8 +41,10 @@ namespace ClickerTestTask
         {
             if (Bootstrap.Instance._ticketValue > _pricePurposeCriptableObject._pricePurposeValue[0])
             {
-                Bootstrap.Instance._gravitySlowDownIsActive = true;
-                Bootstrap.Instance._gravitySlowDownIcon.SetActive(true);
+                Bootstrap.Instance._powerupX2Ticket = true;
+                Bootstrap.Instance._ticketValue -= _pricePurposeCriptableObject._pricePurposeValue[0];
+                Bootstrap.Instance._ticketValueText.text = Bootstrap.Instance._ticketValue.ToString();
+                Bootstrap.Instance._powerupX2TicketIcon.SetActive(true);
             }
         }
     }

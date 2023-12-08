@@ -15,7 +15,15 @@ namespace ClickerTestTask
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            Bootstrap.Instance._ticketValue += 1;
+            if (Bootstrap.Instance._powerupX2Ticket == true)
+            {
+                Bootstrap.Instance._ticketValue += 2;
+            }
+            else if(Bootstrap.Instance._powerupX2Ticket == false)
+            {
+                Bootstrap.Instance._ticketValue += 1;
+            }
+
             _ticketValueText.text = Bootstrap.Instance._ticketValue.ToString();
             Destroy(this.gameObject);
         }

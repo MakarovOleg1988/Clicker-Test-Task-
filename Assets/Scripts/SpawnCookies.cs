@@ -10,7 +10,7 @@ namespace ClickerTestTask
         [SerializeField]
         private float _boardX = 3.0f, _startTime, _minDelayTime, _maxDelayTime;
 
-        private void Start()
+        public void StartSpawnCookiesPrefab()
         {
             InvokeRepeating("SpawnCookiesPrefab", _startTime, Random.Range(_minDelayTime, _maxDelayTime));
         }
@@ -23,6 +23,11 @@ namespace ClickerTestTask
             Vector2 SpawnPos = new Vector2(PosX, transform.position.y);
 
             Instantiate(_cookiePrefab[indexCookie], SpawnPos, _cookiePrefab[indexCookie].transform.rotation);
+        }
+
+        public void CancelSpawnCookiesPrefab()
+        {
+            CancelInvoke("SpawnCookiesPrefab");
         }
     }
 }

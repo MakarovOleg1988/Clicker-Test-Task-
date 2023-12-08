@@ -8,6 +8,8 @@ namespace ClickerTestTask
         public GameObject _chooseLevelPanel;
         public GameObject _settingPanel;
         public GameObject _storePanel;
+        public GameObject _stopGameButton;
+        public GameObject _spawnObj;
 
         public void TurnOnSettingPanel()
         {
@@ -37,6 +39,21 @@ namespace ClickerTestTask
             _chooseLevelPanel.SetActive(false);
             _storePanel.SetActive(false);
             _settingPanel.SetActive(false);
+        }
+
+        public void StartGame()
+        {
+            IEventManager.SetClickButton();
+            _stopGameButton.SetActive(true);
+            _chooseLevelPanel.SetActive(false);
+            _spawnObj.GetComponent<SpawnCookies>().StartSpawnCookiesPrefab();
+        }
+
+        public void StopGame()
+        {
+            IEventManager.SetClickButton();
+            _stopGameButton.SetActive(false);
+            _spawnObj.GetComponent<SpawnCookies>().CancelSpawnCookiesPrefab();
         }
     }
 }
