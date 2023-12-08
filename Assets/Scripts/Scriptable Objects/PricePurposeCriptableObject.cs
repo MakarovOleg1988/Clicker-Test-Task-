@@ -3,7 +3,7 @@
 namespace ClickerTestTask
 {
     [CreateAssetMenu(fileName = "Price.asset", menuName ="Resources/Create Price")]
-    public class PricePurposeCriptableObject: ScriptableObject
+    public class PricePurposeScriptableObject: ScriptableObject
     {
         public int[] _pricePurposeValue;
     }

@@ -11914,7 +11914,7 @@ MonoBehaviour:
   - {fileID: 103173901}
   - {fileID: 1721310340}
   - {fileID: 1365778548}
-  _pricePurposeCriptableObject: {fileID: 11400000, guid: 2b009cd6faa6e3940ad06ce5915342eb, type: 2}
+  _pricePurposeScriptableObject: {fileID: 11400000, guid: 2b009cd6faa6e3940ad06ce5915342eb, type: 2}
 --- !u!1 &1365778548
 GameObject:
   m_ObjectHideFlags: 0
@@ -13237,8 +13237,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -600, y: 1500}
-  m_SizeDelta: {x: 650, y: 250}
+  m_AnchoredPosition: {x: -650, y: 1140}
+  m_SizeDelta: {x: 550, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1627867121
 MonoBehaviour:
@@ -14920,8 +14920,8 @@ MonoBehaviour:
   - {fileID: 7691555260076597597, guid: 165eea63634a33943b453ae6b6f94416, type: 3}
   _boardX: 1.5
   _startTime: 2
-  _minDelayTime: 1
-  _maxDelayTime: 3
+  _minDelayTime: 0.5
+  _maxDelayTime: 2
 --- !u!1 &2090115171
 GameObject:
   m_ObjectHideFlags: 0
