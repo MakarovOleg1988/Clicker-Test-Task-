@@ -95,6 +95,7 @@
     <Compile Include="Assets\Other Materials\Environment\Third Party\Lucid Editor\Runtime\Attributes\HelpBoxAttribute.cs" />
     <Compile Include="Assets\Other Materials\Environment\Third Party\Lucid Editor\Runtime\Attributes\DisableInEditModeAttribute.cs" />
     <Compile Include="Assets\Other Materials\Environment\Third Party\Lucid Editor\Runtime\Attributes\ShowInInspectorAttribute.cs" />
+    <Compile Include="Assets\Scripts\IssuingGifts.cs" />
     <Compile Include="Assets\Other Materials\Particle Effects\Scripts\CFX_LightIntensityFade.cs" />
     <Compile Include="Assets\Other Materials\Environment\Third Party\Lucid Editor\Runtime\Attributes\DisableIfAttribute.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\PricePurposeCriptableObject.cs" />

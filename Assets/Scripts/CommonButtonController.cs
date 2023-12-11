@@ -8,6 +8,7 @@ namespace ClickerTestTask
         public GameObject _chooseLevelPanel;
         public GameObject _settingPanel;
         public GameObject _storePanel;
+        public GameObject _giftPanel;
         public GameObject _stopGameButton;
         public GameObject _spawnObj;
 
@@ -30,6 +31,13 @@ namespace ClickerTestTask
             IEventManager.SetClickButton();
             _playButton.SetActive(false);
             _chooseLevelPanel.SetActive(true);
+        }
+
+        public void TurnOnGiftPanel()
+        {
+            IEventManager.SetClickButton();
+            _playButton.SetActive(false);
+            _giftPanel.SetActive(true);
         }
 
         public void BackToLobby()
